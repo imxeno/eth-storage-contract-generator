@@ -1,0 +1,15 @@
+{
+  "name": "eth-storage-contract-generator",
+  "version": "0.0.1",
+  "description": "A storage contract bytecode generator.",
+  "main": "index.js",
+  "bin": {
+    "eth-storage-contract-generator": "cli.js"
+  },
+  "repository": "https://github.com/imxeno/eth-storage-contract-generator",
+  "author": "Piotr Adamczyk <xeno@xeno.yt>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.19.0"
+  }
+}
