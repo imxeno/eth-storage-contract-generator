@@ -3,7 +3,7 @@
 const program = require('commander');
 const fs = require('fs');
 const { version } = require('./package.json');
-const generator = require('./');
+const generate = require('./');
 
 program
     .version(version)
@@ -20,4 +20,4 @@ if (typeof inputFile === 'undefined') {
 
 const file = fs.readFileSync(inputFile);
 
-console.log(generator(file));
+console.log(generate(file));
