@@ -7,14 +7,14 @@ const generate = require('./');
 
 program
     .version(version)
-    .arguments('<input>')
+    .arguments('<input file>')
     .action((input) => {
         inputFile = input;
     })
     .parse(process.argv);
 
 if (typeof inputFile === 'undefined') {
-    console.error('no input file given');
+    program.outputHelp();
     process.exit(1);
 }
 
